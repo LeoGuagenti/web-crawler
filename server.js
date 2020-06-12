@@ -63,8 +63,7 @@ var WebCrawler = (url) => {
                 return;
             }
     
-            //this logic is all fucked
-            
+            //this logic may contain some errors
             if(uncleanLink.search("boards.4chan.org") !== -1){
                 if(link.search("http") === -1){
                     resolve('https:'.concat(uncleanLink));
